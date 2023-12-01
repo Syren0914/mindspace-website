@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/517511cf66.js" crossorigin="anonymous"></script>
     <title>mindSpark Portfolio</title>
 </head>
 <body>
@@ -11,16 +12,19 @@
     <div class="container">
         <nav>
             <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
 
             </ul>
+            <i class="fa-regular fa-compass" onclick="openmenu()"></i>
+            
         </nav>
         <div class="header-text">
             <p>Digital Marketing</p>
@@ -28,7 +32,7 @@
         </div>
     </div>
 </div>
-
+<!------------------About--------------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -43,12 +47,12 @@
 
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
 
                 </div>
-                <div class="tab-contents active-tab" id="Skills">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                         <li><span>Web Development</span><br>Web App Development</li>
@@ -56,7 +60,7 @@
                         
                     </ul>
                 </div>     
-                <div class="tab-contents" id="education">
+                <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>2020-2024</span><br>JTM Realtor LLC</li>
                         <li><span>2021-2025</span><br>Lorem LLC</li>
@@ -64,12 +68,122 @@
                         
                     </ul>
                 </div>   
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>2020-2024</span><br>www.lorem.com</li>
+                        <li><span>2021-2025</span><br>www.lorem.com</li>
+                        <li><span>2021-2025</span><br>www.lorem.com</li>
+                        
+                    </ul>
+                </div> 
                     
             </div>
         </div>
     </div>
 </div>
+<!------------------Services--------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Fugiat, illum voluptatem, delectus vel temporibus fugit animi, totam molestiae 
+                    incidunt nihil quo odio dolore optio velit a perferendis dicta quasi? Ipsa!
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>   
+                <i class="fa-solid fa-crop"></i> 
+                <h2>UX/UI Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Fugiat, illum voluptatem, delectus vel temporibus fugit animi, totam molestiae 
+                    incidunt nihil quo odio dolore optio velit a perferendis dicta quasi? Ipsa!
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-brands fa-figma"></i>   
+                <h2>Logo Designing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Fugiat, illum voluptatem, delectus vel temporibus fugit animi, totam molestiae 
+                    incidunt nihil quo odio dolore optio velit a perferendis dicta quasi? Ipsa!
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!------------------Portfolio--------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">Our Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="image1.jpg">
+                <div class="layer">
+                    <h3>Social Media </h3>
+                    <p>We will take over your social media with a full growth.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image2.jpg">
+                <div class="layer">
+                    <h3>Web Design </h3>
+                    <p>We will take over your social media with a full growth.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image3.jpg">
+                <div class="layer">
+                    <h3>Design</h3>
+                    <p>We will take over your social media with a full growth.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+<!------------------Contact--------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></i></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" email="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Erdene Batbayar.All Rights Reserved</p>
+    </div>
+</div>
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -77,16 +191,47 @@
 
     function opentab(tabname){
         for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+            tablink.classList.remove("active-link");
         }
         for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
+            tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
     }
 
 
 
 </script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0" ;
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKVnI4DimU83XbDeNYiS8_BpMLnrbBZWw6uZ316pVCi-huGOuZ5dwi0Q2TCOSPFJpK4A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     
 </body>
 </html>
