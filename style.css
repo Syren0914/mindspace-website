@@ -31,8 +31,8 @@ html{
     transform: translateX(0%);
 
     z-index: 1   ; /* Place the 3D object behind other content */
-    width: 400px; /* or a fixed width, e.g., 800px */
-    height: 800px; /* or a fixed height, adjust as needed */
+    width: 450px; /* or a fixed width, e.g., 800px */
+    height: 700px; /* or a fixed height, adjust as needed */
     overflow: hidden; /* Hide overflowing content */
 }
 .containers {
