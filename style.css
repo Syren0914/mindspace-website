@@ -25,12 +25,15 @@ html{
 
 }
 #spline-container {
-    position:absolute;
-    top: 0;
-    
-    width: 100%;
-    height: 100vh;
+    position: absolute;
+    top: 20%  ;
+    left: 60%;
+    transform: translateX(0%);
+
     z-index: -1; /* Place the 3D object behind other content */
+    width: 400px; /* or a fixed width, e.g., 800px */
+    height: 600px; /* or a fixed height, adjust as needed */
+     /* Hide overflowing content */
 }
 .container {
     position: relative;
