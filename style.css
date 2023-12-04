@@ -26,14 +26,19 @@ html{
 }
 #spline-container {
     position: absolute;
-    top: 20%  ;
+    top: 10%;
     left: 60%;
     transform: translateX(0%);
 
-    z-index: -1; /* Place the 3D object behind other content */
+    z-index: 1   ; /* Place the 3D object behind other content */
     width: 400px; /* or a fixed width, e.g., 800px */
-    height: 600px; /* or a fixed height, adjust as needed */
-     /* Hide overflowing content */
+    height: 800px; /* or a fixed height, adjust as needed */
+    overflow: hidden; /* Hide overflowing content */
+}
+.containers {
+    position: relative;
+    z-index: 0; /* Adjust the z-index to ensure it's above the 3D object */
+    padding: 10px 10%;
 }
 .container {
     position: relative;
@@ -121,6 +126,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    background-color: black;
 }
 
 

@@ -10,10 +10,10 @@
 <body>
 <div id="header">
     <div id="spline-container">
-        <iframe src='https://my.spline.design/clonercubebinarycopy-df2d633714b2ed7a3676403fe809ee33/' frameborder='0' width='100%' height='100%'></iframe>
+        <iframe src='https://my.spline.design/clonercubebinarycopy-556a37542dbf066a72dc4d81a7866a91/' frameborder='0' width='100%' height='100%'></iframe>
     </div>
     
-    <div class="container">
+    <div class="containers">
         <nav>
             <img src="logo.png" class="logo">
             <ul id="sidemenu">
@@ -221,25 +221,7 @@
         
     }
 </script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKVnI4DimU83XbDeNYiS8_BpMLnrbBZWw6uZ316pVCi-huGOuZ5dwi0Q2TCOSPFJpK4A/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent succesfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  
+
 
 
 
