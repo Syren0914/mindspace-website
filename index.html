@@ -4,25 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globalStyles.css">
     <script src="https://kit.fontawesome.com/517511cf66.js" crossorigin="anonymous"></script>
-    <title>mindSpark Portfolio</title>
+    <title>MindSpark Portfolio</title>
 </head>
 <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
 <div id="header">
     <div id="background">
-        <img src="carbon.png" alt="background">
+        <img src="background.jpg" alt="background">
     </div>
     
     
     <div class="container">
         <nav>
-            <img src="logo.png" class="logo">
+            <a class="logo" href="#">MindSpark</a>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><button>Contact Us</button></li>
                 <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
 
             </ul>
@@ -31,9 +52,61 @@
             
         </nav>
         <div class="header-text">
-            <p>Digital Marketing</p>
-            <h1>Hi, Welcome To  <br><span>MindSpark</span></h1>
+            <p>Online Marketing Agency</p>
+            <h1>Hello, Welcome To  <br><span>MindSpark</span></h1>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+              </button>
+            
        
+            
+        </div>
+    </div>
+</div>
+
+<!------------------Services--------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>We'll craft your unique digital presence – a tailored solution designed for success. 
+                    MindSpark builds modern, 
+                    functional websites that captivate and engage your audience. Your vision, our expertise – let's bring it to life.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>   
+                <i class="fa-solid fa-crop"></i> 
+                <h2>UX/UI Design</h2>
+                <p>Let's craft a digital brilliance through thoughtful UX/UI design. Elevate your online presence with 
+                    interfaces that captivate and engage. Your vision, our expertise – let's build an exceptional user experience together.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-chart-simple"></i> 
+                <h2>Online Marketing</h2>
+                <p>Where design meets influence. Elevate your brand with our standout UX/UI design and dynamic social media marketing. From captivating interfaces to strategic campaigns, 
+                    we craft experiences that make an impact. Unleash your brand's potential with the perfect blend of design and social media mastery.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i> 
+                <h2>Online Ordering System</h2>
+                <p>Where design meets influence. Elevate your brand with our standout UX/UI design and dynamic social media marketing. From captivating interfaces to strategic campaigns, 
+                    we craft experiences that make an impact. Unleash your brand's potential with the perfect blend of design and social media mastery.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
             
         </div>
     </div>
@@ -87,41 +160,6 @@
                     </ul>
                 </div> 
                     
-            </div>
-        </div>
-    </div>
-</div>
-<!------------------Services--------------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Our Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>We'll craft your unique digital presence – a tailored solution designed for success. 
-                    MindSpark builds modern, 
-                    functional websites that captivate and engage your audience. Your vision, our expertise – let's bring it to life.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            
-            <div>   
-                <i class="fa-solid fa-crop"></i> 
-                <h2>UX/UI Design</h2>
-                <p>Let's craft a digital brilliance through thoughtful UX/UI design. Elevate your online presence with 
-                    interfaces that captivate and engage. Your vision, our expertise – let's build an exceptional user experience together.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            
-            <div>
-                <i class="fa-solid fa-chart-simple"></i> 
-                <h2>Marketing</h2>
-                <p>Where design meets influence. Elevate your brand with our standout UX/UI design and dynamic social media marketing. From captivating interfaces to strategic campaigns, 
-                    we craft experiences that make an impact. Unleash your brand's potential with the perfect blend of design and social media mastery.
-                </p>
-                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
@@ -192,47 +230,19 @@
         <p>Copyright © 2023 Erdene Batbayar.All Rights Reserved</p>
     </div>
 </div>
-<script>
+<script src="script.js">
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
 
 
 
 </script>
 <script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0" ;
-
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-        
-    }
+    
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLnk5805e8PFcpToMkinB4aEYKpB_yOynQ6sjbQ7EJSAsmVyEUA/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
+    
   </script>
+
 
 
 
