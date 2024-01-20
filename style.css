@@ -599,3 +599,6 @@ button {
     background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   }
   
+  .learn-more{
+    margin-top: 50px;
+  }
