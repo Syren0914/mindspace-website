@@ -1,5 +1,5 @@
 body{
-    cursor: none;
+    
 }
 body::-webkit-scrollbar {
     width: 10px;               /* width of the entire scrollbar */
@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
     border: 3px solid ;  
   }
 
-  .circle {
+  /* .circle {
     height: 24px;
     width: 24px;
     border-radius: 24px;
@@ -24,6 +24,6 @@ body::-webkit-scrollbar {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
+    z-index: 99999999; /* so that it stays on top of all other elements 
+  }*/
 
