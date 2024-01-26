@@ -477,8 +477,12 @@ nav .fa-regular{
 
 /*css for small screens*/
 @media only screen and (max-width: 600px){
-    body{
-        font-family: "Poppins","sans-serif";
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    
     }
     
     #header{
@@ -638,3 +642,13 @@ button {
   .learn-more{
     margin-top: 50px;
   }
+
+
+
+
+
+
+
+
+  /* learn more button  */
+  
