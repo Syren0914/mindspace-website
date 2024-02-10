@@ -31,5 +31,45 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
     }
 
 
- 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) =>{
+            console.log(entry)
+            if (entry.isIntersecting){
+                entry.target.classList.add('show');
     
+            } else{
+                entry.target.classList.remove('show')
+            }
+        })
+    })
+    
+    
+    const hiddenElement = document.querySelectorAll('.hidden')
+    hiddenElement.forEach((element)=>{
+        observer.observe(element);
+    });
+    
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.item');
+      
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+      
+            const filterValue = this.getAttribute('data-filter');
+      
+            items.forEach(item => {
+              item.style.display = 'none';
+              if (item.classList.contains(filterValue) || filterValue === 'all') {
+                item.style.display = 'block';
+              }
+            });
+          });
+        });
+      });
+      

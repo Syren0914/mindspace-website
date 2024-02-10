@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="globalStyles.css">
@@ -37,13 +37,13 @@
     
     <div class="container">
         <nav>
-            <a class="logo" href="#"><img src="logo.png" alt="logo"></a>
+            <a class="logo" href="#"> MindSpark</a>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><button>Contact Us</button></li>
+                <li><button class="custom-learn-more">Contact Us</button></li>
                 <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
 
             </ul>
@@ -51,15 +51,16 @@
             
             
         </nav>
-        <div class="header-text">
+        <div class="header-text ">
             <p>Digital Marketing Agency</p>
             <h1>Hello, Welcome To  <br><span>MindSpark</span></h1>
-            <button class="learn-more" id="button">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button class="custom-learn-more" style="margin-top: 50px;" id="custom-button">
+                <span class="custom-circle" aria-hidden="true">
+                    <span class="custom-icon custom-arrow"></span>
                 </span>
-                <span class="button-text">Learn More</span>
-              </button>
+                <span class="custom-button-text">Learn More</span>
+            </button>
+            
               <div class="social-icons">
                 <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></i></a>
@@ -146,8 +147,35 @@
     </div>
 </div>
 
+<!---------------------------- PROJECTS ------------------------- -->
+<h1 class="sub-title">Projects</h1><br><br><br>
+<div class="portfolio">
+    <div class="filter">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="web">WEB DESIGN</button>
+      <button class="filter-btn" data-filter="graphic">GRAPHIC DESIGN</button>
+      <button class="filter-btn" data-filter="photography">PHOTOGRAPHY</button>
+    </div>
+  
+    <div class="gallery">
+      <div class="item web">
+        <div class="work">
+            <img src="image1.jpg" alt="">
+            <div class="layer">
+                <h3>Lumthai</h3>
+                <p>Minimal designed website for restaurant</p>
+                <a target="_blank" href="https://lumthai.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+      <div class="item graphic"><img src="image2.jpg" alt=""></div>
+      <div class="item photography"><img src="image3.jpg" alt=""></div>
+      <!-- Add more items as needed -->
+    </div>
+</div>
+
 <!------------------Portfolio--------------------- -->
-<div id="portfolio">
+<!-- <div id="portfolio">
     <div class="container">
         <h2 class="sub-title">Our Work</h2>
         <h3 class="sub-title"> Website</h3>
@@ -251,7 +279,7 @@
        
 
     </div>
-</div>
+</div> -->
                     <!--------------------- OurClients --------------------->
                     <ul class="wrapper">
                         <li class="icon facebook">
