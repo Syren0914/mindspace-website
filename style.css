@@ -97,6 +97,11 @@ nav{
     text-transform: uppercase;
     letter-spacing: 2px; 
     font-size: larger;
+    transition: 0.5s;
+
+}
+.logo:hover{
+  color: rgb(137, 239, 255);
 
 }
 nav ul li{
@@ -506,7 +511,7 @@ nav .fa-regular{
         padding: 0;
         font-family: 'Poppins', sans-serif;
         box-sizing: border-box;
-    
+        
     }
     
     #header{
@@ -532,13 +537,14 @@ nav .fa-regular{
         
     }
     .header-text{
-        margin-top: 40%;
+        margin-top: 50%;
         font-size: 16px;
         
 
     }
     .header-text h1{
         font-size: 30px;
+        margin-top: 50px;
 
     }
     .header-text h1 span{
@@ -596,14 +602,19 @@ nav .fa-regular{
     }
     .gallery{
       flex-direction: column  ;
-      /* justify-content: center; */
+      justify-content: center;
       align-items: center;
-      width: auto;
-    }
-    .item .web{
-      width: 100%;
+      
+      
       
     }
+    .item{
+      margin: 10px;
+    }
+    .work img{
+      width: 500px;
+    }
+    
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
@@ -1377,7 +1388,7 @@ nav .fa-regular{
 
 .filter-btn.active {
   background-color: transparent;
-  color: #00bfff;
+  color: #00bfff;c
   border: #6cd6f9 2px solid;
   transition: 0.5s;
   
@@ -1391,7 +1402,8 @@ nav .fa-regular{
   
   
 }
-
+@media only screen and (min-width: 600px) {
+  
 .item {
   width: calc(33.33% - 20px);
   margin: 10px;
@@ -1400,6 +1412,9 @@ nav .fa-regular{
   
   
 }
+  
+}
+
 
 
 /* Add specific styles for different categories */
