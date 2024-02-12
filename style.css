@@ -7,7 +7,8 @@
 }
 body{
     background-color: #eeeeee;
-    color: rgb(0, 0, 0);
+    color: rgb(151, 151, 151);
+    letter-spacing: ;
         /* Existing styles */
     height: 100vh;
     margin: 0;
@@ -115,6 +116,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    font-weight: 500;
 }
 nav ul li a::after{
     content: '';
@@ -161,8 +163,12 @@ nav ul li a:hover::after{
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+    font-weight: 600;
     text-align: center; /* Add this line to center the text */
     
+}
+.header-text p{
+  font-weight: 500;
 }
 @keyframes textShine {
     0% {
@@ -174,7 +180,8 @@ nav ul li a:hover::after{
   }
 .header-text h1 span{
         font-size: clamp(4rem, 1.5vw, 3rem);
-        font-weight: bold;
+        font-weight: 600;
+        letter-spacing: -3px;
         margin: 5px;
         background: linear-gradient(
           to right,
