@@ -617,6 +617,8 @@ nav .fa-regular{
     }
     .item{
       margin: 10px;
+      width: 250px; /* Set width */
+      
     }
     .work img{
       width: 500px;
@@ -1414,9 +1416,11 @@ nav .fa-regular{
 @media only screen and (min-width: 600px) {
   
 .item {
-  width: calc(33.33% - 20px);
+  width: 300px; /* Set width */
+  
   margin: 10px;
   background-color: #eee;
+  
   /* padding: 20px; */
   
   
@@ -1426,25 +1430,14 @@ nav .fa-regular{
 
 
 
-/* Add specific styles for different categories */
-/* .item.web {
-  background-color: #ff9999; 
-}
-
-.item.graphic {
-  background-color: #99ccff;
-}
-
-.item.photography {
-  background-color: #cc99ff;
-} */
-
 .item img {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  object-fit: contain;
+  
 }
 .item img:hover{
   
