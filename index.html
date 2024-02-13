@@ -67,18 +67,26 @@
             
             <div class="social-media">
             <ul class="wrapper">
-                <li class="icon facebook">
-                    <span class="tooltip">Facebook</span>
-                    <span><i class="fab fa-facebook-f"></i></span>
-                </li>
-                <li class="icon twitter">
-                    <span class="tooltip">Twitter</span>
-                    <span><i class="fab fa-twitter"></i></span>
-                </li>
-                <li class="icon instagram">
-                    <span class="tooltip">Instagram</span>
-                    <span><i class="fab fa-instagram"></i></span>
-                </li>
+                <a href="https://facebook.com">
+                    <li class="icon facebook" >
+                        
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        
+                    </li>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fa-brands fa-x-twitter"></i></span>
+                    </li>
+                </a>
+                <a href="https://Instagram.com">
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li>
+                </a>
             </ul>
         </div>
             
@@ -144,7 +152,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="banner.jpg">
+                <img src="./images/banner.jpg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Us</h1>
@@ -166,29 +174,23 @@
     <h1 class="sub-title">Projects</h1><br><br><br>
     <div class="portfolio">
         <div class="filter">
-        <button class="filter-btn active" data-filter="all">ALL</button>
-        <button class="filter-btn" data-filter="web">WEB DESIGN</button>
-        <button class="filter-btn" data-filter="graphic">GRAPHIC DESIGN</button>
-        <button class="filter-btn" data-filter="photography">PHOTOGRAPHY</button>
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="web">WEB DESIGN</button>
+            <button class="filter-btn" data-filter="logo">LOGO DESIGN</button>
+            <button class="filter-btn" data-filter="photography">PHOTOGRAPHY</button>
+            <button class="filter-btn" data-filter="ads">ADS</button>
         </div>
-    
-        <div class="gallery">
-        <div class="item web">
-            <div class="work">
-                <img src="image1.jpg" alt="">
-                <div class="layer">
-                    <h3>Lumthai</h3>
-                    <p>Minimal designed website for restaurant</p>
-                    <a target="_blank" href="https://lumthai.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item graphic"><img src="image2.jpg" alt=""></div>
-        <div class="item photography"><img src="image3.jpg" alt=""></div>
-        <!-- Add more items as needed -->
+
+        <div class="gallery" id="project-gallery">
+            <!-- Project items will be dynamically generated here -->
         </div>
     </div>
 </div>
+
+
+
+
+    
 
 
 <!------------------Portfolio--------------------- -->

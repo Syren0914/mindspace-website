@@ -2,7 +2,7 @@ body{
     
 }
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
+    width: 8px;               /* width of the entire scrollbar */
   }
   
   body::-webkit-scrollbar-track {
@@ -10,9 +10,10 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #00fff2;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid ;  
+    background-color: #cccccc;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid transparent;  
+
   }
 
   /* .circle {

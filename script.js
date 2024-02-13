@@ -72,4 +72,164 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
           });
         });
       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //Projects
+      const projects = [
+        {
+            image: "/images/image1.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "web"
+        },
+        {
+            image: "/images/image2.jpg",
+            title: "Thai love & Afterwork",
+            description: "Minimal designed website for restaurant",
+            url: "https://thailove-afterwork.netlify.app",
+            type: "web"
+        },
+        {
+            image: "/images/image3.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        },
+        {
+            image: "/images/Logo1.png",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        }
+        ,
+        {
+            image: "/images/Logo2.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        },
+        {
+            image: "/images/Logo3.png",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        }
+        ,
+        {
+            image: "/images/image1.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        },
+        {
+            image: "/images/Logo5.png",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        }
+        ,
+        {
+            image: "/images/Logo6.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        },
+        {
+            image: "/images/Logo7.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        },
+        {
+            image: "/images/Logo8.png",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "logo"
+        },
+        {
+            image: "/images/Marketing1.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        },
+        {
+            image: "/images/Marketing2.jpg",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        },
+        {
+            image: "/images/Marketing3.png",
+            title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        }
+        // Add more project data as needed
+    ];
+
+    // Function to generate HTML for project items
+    function generateProjectItem(project) {
+        return `
+            <div class="item ${project.type}">
+                <div class="work">
+                    <img src="${project.image}" alt="">
+                    <div class="layer">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <a target="_blank" href="${project.url}"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // Populate project gallery with dynamically generated project items
+    const projectGallery = document.getElementById('project-gallery');
+    projects.forEach(project => {
+        const projectHTML = generateProjectItem(project);
+        projectGallery.innerHTML += projectHTML;
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       
