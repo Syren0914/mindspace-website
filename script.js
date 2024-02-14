@@ -89,25 +89,52 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
       //Projects
       const projects = [
         {
-            image: "/images/image1.jpg",
+            image: "/images/web1.jpg",
             title: "Lumthai",
             description: "Minimal designed website for restaurant",
             url: "https://lumthai.netlify.app",
             type: "web"
         },
         {
-            image: "/images/image2.jpg",
+            image: "/images/web2.jpg",
             title: "Thai love & Afterwork",
             description: "Minimal designed website for restaurant",
             url: "https://thailove-afterwork.netlify.app",
             type: "web"
         },
         {
-            image: "/images/image3.jpg",
-            title: "Lumthai",
+            image: "/images/web2.jpg",
+            title: "Saihtong",
+            description: "Minimal designed website for restaurant",
+            url: "https://saithongparathai.com",
+            type: "web"
+        },
+        {
+            image: "/images/Menu.jpg",
+            title: "Menu Borchure",
             description: "Minimal designed website for restaurant",
             url: "https://lumthai.netlify.app",
-            type: "ads"
+            type: "menu"
+        },
+        {
+            image: "/images/Menu1.jpg",
+            title: "Menu Borchure",
+            description: "",
+            url: "https://lumthai.netlify.app",
+            type: "menu"
+        },
+        {
+            image: "/images/Menu2.jpg",
+            title: "Menu Borchure",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "menu"
+        },{
+            image: "/images/Menu3.jpg",
+            title: "Menu Borchure",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "menu"
         },
         {
             image: "/images/Logo1.png",
@@ -132,13 +159,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
             type: "logo"
         }
         ,
-        {
-            image: "/images/image1.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
-            type: "logo"
-        },
+        
         {
             image: "/images/Logo5.png",
             title: "Lumthai",
@@ -176,15 +197,29 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
             type: "ads"
         },
         {
-            image: "/images/Marketing2.jpg",
+            image: "/images/Marketing2.png",
             title: "Lumthai",
             description: "Minimal designed website for restaurant",
             url: "https://lumthai.netlify.app",
             type: "ads"
         },
         {
-            image: "/images/Marketing3.png",
+            image: "/images/Marketing3.jpg",
             title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        },
+        {
+            image: "/images/Marketing4.jpg",
+            // title: "Lumthai",
+            description: "Minimal designed website for restaurant",
+            url: "https://lumthai.netlify.app",
+            type: "ads"
+        },
+        {
+            image: "/images/Marketing5.jpg",
+            // title: "Lumthai",
             description: "Minimal designed website for restaurant",
             url: "https://lumthai.netlify.app",
             type: "ads"
