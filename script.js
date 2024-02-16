@@ -37,9 +37,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
             if (entry.isIntersecting){
                 entry.target.classList.add('show');
     
-            } else{
-                entry.target.classList.remove('show')
-            }
+             } // } else{
+            //     entry.target.classList.remove('show')
+            // }
         })
     })
     
@@ -125,12 +125,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
         },
         {
             image: "/images/Menu2.jpg",
-            title: "Menu Borchure",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
-            type: "menu"
-        },{
-            image: "/images/Menu3.jpg",
             title: "Menu Borchure",
             description: "Minimal designed website for restaurant",
             url: "https://lumthai.netlify.app",

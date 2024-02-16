@@ -39,14 +39,14 @@
     </div>
      -->
     
-    <div class="container">
+    <div class="container hidden">
         <nav>
             <a class="logo" href="#"> MindSpark</a>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Portfolio</a></li>
                 <li><button class="custom-learn-more">Contact Us</button></li>
                 <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
 
@@ -99,7 +99,7 @@
 
 <!------------------Services--------------------- -->
 <div id="services">
-    <div class="container">
+    <div class="container hidden">
         <h1 class="sub-title">Our Services</h1>
         <div class="services-list">
             <div>
@@ -150,7 +150,7 @@
 </div>
 <!------------------About--------------------- -->
 <div id="about">
-    <div class="container">
+    <div class="container hidden">
         <div class="row">
             <div class="about-col-1">
                 <img src="./images/banner.jpg">
@@ -170,8 +170,19 @@
     </div>
 </div>
 
+
+<div id="POS">
+    <h1 class="sub-title">How's the POS work</h1>
+    <div class="pos">
+        
+            <img src="./images/mockup.jpg">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laudantium, nobis hic voluptatem voluptate ipsum consequuntur odit, laboriosam nulla vero quasi aperiam similique quam eius, fugit sit tenetur deserunt cumque!</p>
+
+    </div>
+</div>
+
 <!---------------------------- PROJECTS ------------------------- -->
-<div class="container">
+<div class="container hidden" id="projects">
     <h1 class="sub-title">Projects</h1><br><br><br>
     <div class="portfolio">
         <div class="filter">
@@ -301,28 +312,37 @@
     </div>
 </div> -->
                     <!--------------------- OurClients --------------------->
-                    <ul class="wrapper">
-                        <li class="icon facebook">
-                            <span class="tooltip">Facebook</span>
-                            <span><i class="fab fa-facebook-f"></i></span>
-                        </li>
-                        <li class="icon twitter">
-                            <span class="tooltip">Twitter</span>
-                            <span><i class="fab fa-twitter"></i></span>
-                        </li>
-                        <li class="icon instagram">
-                            <span class="tooltip">Instagram</span>
-                            <span><i class="fab fa-instagram"></i></span>
-                        </li>
-                    </ul>
-
+                    <div class="social-media">
+                        <ul class="wrapper">
+                            <a href="https://facebook.com">
+                                <li class="icon facebook" >
+                                    
+                                    <span class="tooltip">Facebook</span>
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                    
+                                </li>
+                            </a>
+                            <a href="https://twitter.com/?lang=en">
+                                <li class="icon twitter">
+                                    <span class="tooltip">Twitter</span>
+                                    <span><i class="fa-brands fa-x-twitter"></i></span>
+                                </li>
+                            </a>
+                            <a href="https://Instagram.com">
+                                <li class="icon instagram">
+                                    <span class="tooltip">Instagram</span>
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
 <!------------------Contact--------------------- -->
 <div id="contact">
-    <div class="container">
+    <div class="container hidden">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Us</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> MindSpark@gmail.com</p>
+                <a class="mail" href="mailto:Mindsparkdmv@gmail.com"><p><i class="fa-solid fa-paper-plane"></i> MindSparkdmv@gmail.com</p></a>
                 <p><i class="fa-solid fa-phone"></i>+1 (571) 888-6074</p>
                 <div class="social-icons">
                     <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
