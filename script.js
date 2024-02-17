@@ -16,19 +16,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
         sidemenu.style.right = "-200px";
         
     }
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+    
 
 
     const observer = new IntersectionObserver((entries) => {
@@ -112,110 +100,110 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
         {
             image: "/images/Menu.jpg",
             title: "Menu Borchure",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            description: "",
+            url: "",
             type: "menu"
         },
         {
             image: "/images/Menu1.jpg",
             title: "Menu Borchure",
             description: "",
-            url: "https://lumthai.netlify.app",
-            type: "menu"
+            url: "",
+            type: ""
         },
         {
             image: "/images/Menu2.jpg",
             title: "Menu Borchure",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            description: "",
+            url: "",
             type: "menu"
         },
         {
             image: "/images/Logo1.png",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
+            title: "Logo",
+            description: "",
             url: "https://lumthai.netlify.app",
             type: "logo"
         }
         ,
         {
             image: "/images/Logo2.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         },
         {
             image: "/images/Logo3.png",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         }
         ,
         
         {
             image: "/images/Logo5.png",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         }
         ,
         {
             image: "/images/Logo6.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         },
         {
             image: "/images/Logo7.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         },
         {
             image: "/images/Logo8.png",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Logo",
+            description: "",
+            url: "",
             type: "logo"
         },
         {
             image: "/images/Marketing1.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Marketing",
+            description: "",
+            url: "",
             type: "ads"
         },
         {
             image: "/images/Marketing2.png",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Marketing",
+            description: "",
+            url: "",
             type: "ads"
         },
         {
             image: "/images/Marketing3.jpg",
-            title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Marketing",
+            description: "",
+            url: "",
             type: "ads"
         },
         {
             image: "/images/Marketing4.jpg",
-            // title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Marketing",
+            description: "",
+            url: "",
             type: "ads"
         },
         {
             image: "/images/Marketing5.jpg",
-            // title: "Lumthai",
-            description: "Minimal designed website for restaurant",
-            url: "https://lumthai.netlify.app",
+            title: "Marketing",
+            description: "",
+            url: "",
             type: "ads"
         }
         // Add more project data as needed
@@ -253,7 +241,22 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cROkXrUl-SalvyCqLn
 
 
 
+// Tab for about Section
 
+
+var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
 
 
 

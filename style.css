@@ -265,6 +265,8 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 .tab-links::after{
@@ -286,8 +288,22 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #00fff2;
-    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2be6e9;
+    font-size: 18px;
+    font-weight: 600;
+}
+.tab-contents ul li a{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+.tab-contents ul li a:hover{
+  color: #00bfff;
+
 }
 .tab-contents{
     display: none;
@@ -519,13 +535,17 @@ nav .fa-regular{
         padding: 0;
         font-family: 'Poppins', sans-serif;
         box-sizing: border-box;
+        /* overflow-x: hidden; */
+        /* scroll-margin: 0px; */
+        /* scrollbar-color: none; */
+        overflow-x: hidden;
+
         
     }
     
     #header{
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('/images/Background_mobile.png');
         background-size: cover;
-        height: 100vh;
         
         
         
